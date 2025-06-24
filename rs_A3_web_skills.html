@@ -1,0 +1,169 @@
+<!-- 
+    Web Skills Page - TerraMine Portfolio (Assignment -3 Revised Version)
+    Created by: Ramnique Sandhu
+    Date: 14th June, 2025
+    Description: Redesigned Web Skills page showcasing HTML, CSS, and accessibility best practices using modern visual techniques.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for proper encoding, responsiveness and search description -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title shown in Browser tab -->
+    <title>My Web Skills - TerraMine Portfolio</title>
+
+    <!-- Link to external CSS (as per the assignment specification) -->
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <!-- Favicon for branding consistency -->
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+
+    <!-- JavaScript function added for A4 form functionality -->
+    <script>
+        /**
+         * Function to open the HTML5 newsletter form in a new browser tab.
+         * This demonstrates JavaScript integration for client-side interaction.
+         */
+        function openNewsletterForm() {
+            window.open("newsletter_form.html", "_blank");
+        }
+    </script>
+</head>
+
+<body>
+    <!-- ============================
+         HEADER AND NAVIGATION BAR 
+         Shared across all site pages
+    ============================== -->
+    <header id="header">
+        <!-- Company logo aligned with portfolio identity -->
+        <img src="images/logo.jpg" alt="TerraMine Logo" class="logo">
+        <h1>My Web Skills</h1>
+
+        <!-- Main site navigation menu (used on all pages) -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rs_A3_about.html">About</a></li>
+                <li><a href="rs_A3_resume.html">Resume</a></li>
+                <li><a href="rs_A3_web_skills.html">Web Skills</a></li>
+                <li><a href="rs_A4_communication.html">Communication</a></li>
+                <li><a href="rs_A4_teamwork.html">Teamwork</a></li>
+                <li><a href="rs_A4_data_analysis.html">Data Analysis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ============================
+         MAIN CONTENT SECTION 
+         Highlights student's front-end abilities, web design & development capabilities
+    ============================== -->
+    <main class="container">
+
+        <!-- Introduction section giving overview of technical capabilities-->
+        <section class="intro-section">
+            <h2>My Craft in Web Development</h2>
+            <p class="center-align">My skill set spans both <strong>front-end design</strong> and <strong>semantic HTML5 structuring</strong>, underpinned by clean, modular CSS styling. Below are highlights of the tools and techniques I use to bring digital content to life.</p>
+        </section>
+
+        <!-- Section highlighting core HTML knowledge -->
+        <section class="highlight-section">
+            <h3>Semantic HTML Elements I Master</h3>
+            <ul class="styled-list">
+                <li><strong>Headings:</strong> I employ a clear hierarchy of <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags to ensure semantic clarity and accessibility.</li> 
+                <li><strong>Containers:</strong> I structure layouts with <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;article&gt;</code> balancing flexibility and meaning.</li>
+                <li><strong>Links and Navigation:</strong> I create seamless user journeys with intuitive <code>&lt;a&gt;</code> tags for internal and external linking.</li>
+                <li><strong>Images:</strong> I integrate responsive <code>&lt;img&gt;</code> elements with descriptive alt text to enhance accessibility and SEO.</li>
+                <li><strong>Lists:</strong> I craft <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> with bespoke styling, incorporating custom bullets or Roman numerals for elegance.</li>
+            </ul>
+        </section>
+
+        <!-- Section listing CSS abilities with emphasis on visual techniques -->
+        <section>
+            <h3>CSS Techniques That Define My Aesthetic</h3>
+            <p>My styling philosophy is rooted in a <strong>mobile-first</strong>, accessibility-driven approach, ensuring inclusivity and adaptability. Key CSS techniques include:</p>
+            <ul class="styled-list">
+                <li>Precision with type, class, and ID selectors for targeted styling.</li>
+                <li>Flexbox and Grid to create fluid, responsive layouts with perfect alignment.</li>
+                <li>Custom colour schemes defined in HSL or RGB for visual harmony and brand consistency.</li>
+                <li>Media queries tailored for print, device adaptability, and responsive breakpoints.</li>
+                <li>Dynamic button styling with engaging hover, focus, and active states for enhanced interactivity.</li>
+            </ul>
+        </section>
+
+        <!-- One Table, Distinctively Designed -->
+        <section class="skills-table-section">
+            <h3 class="center-align">Proficiency in Web Technologies</h3>
+            <table class="skills-table">
+                <tr>
+                    <th>Technology</th>
+                    <th>Proficiency</th>
+                    <th>Last Used</th>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Expert</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Advanced</td>
+                    <td>2025</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediate</td>
+                    <td>2024</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- CHARACTER REFERENCE SECTION -->
+        <section class="character-section">
+            <h3>HTML Character References I Utilize</h3>
+            <p>To ensure precision and clarity, I incorporate special characters where needed:</p>
+            <ul class="character-list">
+                <li><code>&amp;copy;</code> → ©</li>
+                <li><code>&amp;amp;</code> → &</li>
+                <li><code>&amp;lt;</code> → <</li>
+                <li><code>&amp;gt;</code> → ></li>
+            </ul>
+        </section>
+
+        <!-- IMAGE SECTION FOR PERSONAL TOUCH -->
+        <section class="image-container">
+            <h3 class="center-align">The Soul Behind The Code</h3>
+            <img src="images/Drone Inspection.png" alt="Stylized Skill Representation">
+            <p class="center-align">A creative touch to every <strong>&lt;div&gt;</strong> I write.</p>
+        </section>
+
+        <!-- ============================
+             NEW SECTION: JavaScript Newsletter Form Trigger (A4 addition)
+        ============================== -->
+        <section class="center-align">
+            <h2 class="decorated">Explore My JavaScript Application</h2>
+            <p>Explore my skills in HTML, CSS, and JavaScript via this styled and validated HTML5 form, opened in a new browser tab:</p>
+            <button onclick="openNewsletterForm()" style="padding: 12px 24px; font-size: 1rem; background-color: #1abc9c; color: white; border: none; border-radius: 6px; cursor: pointer; margin-top: 20px;">
+                Open Newsletter Signup Form
+            </button>
+        </section>
+
+    </main>
+
+    <!-- ===============================
+         GLOBAL FOOTER SECTION
+         Repeated across all pages
+    ================================ -->
+    <footer class="footer">
+        <!-- Contact email and phone number -->
+        <p>Contact us: <a href="mailto:info@terramine.com">&#9993; info@terramine.com</a> |
+            <a href="tel:+61123456789">&#9742; +61 123 456 789</a></p>
+
+        <!-- Legal copyright -->
+        <p>&copy; 2025 Ramnique Sandhu. All rights reserved.</p>
+    </footer>
+</body>
+</html>

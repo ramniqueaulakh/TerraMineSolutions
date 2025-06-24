@@ -1,0 +1,324 @@
+/* 
+==================================================
+ TerraMine Portfolio CSS - Assignment-3 Revised Submission
+ Author: Ramnique Sandhu
+ Date: 4th May, 2025
+ Description: External CSS for all pages in the revised assignment 3 portfolio site.
+==================================================
+*/
+
+
+/* ----------------------------
+   1. UNIVERSAL RESET
+   Removes default spacing and sets box-sizing
+----------------------------- */
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+/* ----------------------------
+   2. GLOBAL BODY STYLING
+   Sets fonts, colors, and base layout
+----------------------------- */
+
+body { font-family: 'Arial', 'Verdana', 'Tahoma', 'Georgia', sans-serif;
+    background-color: #f4f4f9;
+    color: #2c3e50;
+    line-height: 1.7;
+    padding: 20px;}
+
+/* ----------------------------
+   3. CONTAINER CLASS
+   Wraps main content on each page for spacing and visual structure
+----------------------------- */
+
+.container { background-color: #ffffff;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);}
+
+/* ----------------------------
+   4. HEADER SECTION
+   Includes top title and navigation bar
+----------------------------- */
+
+#header { background-color: hsl(209, 100%, 79%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #02269e;}
+
+.logo { width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;}
+
+/* ----------------------------
+   5. NAVIGATION MENU
+   Horizontal CSS button-style links
+----------------------------- */
+
+nav ul { list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    background-color: #2c3e50;
+    padding: 10px 0;
+    border-radius: 8px;}
+
+nav ul li a { color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    background-color: #34495e;}
+
+nav ul li a:hover { background-color: #1abc9c;}
+
+/* ----------------------------
+   6. PRINT MEDIA QUERY
+   Print-friendly version of all pages
+----------------------------- */
+@media print { nav, footer, .logo, header {
+        display: none !important;}
+
+    body { font-size: 18pt;
+        background-color: white !important;
+        color: black;}}
+
+/* ----------------------------
+   7. HEADINGS
+   Consistent font sizes and colors
+----------------------------- */
+
+h1 { font-size: 2.5em;
+    font-weight: normal;
+    color: #0a3d62;
+    margin-bottom: 20px;}
+
+h2 {font-size: 2em;
+    font-weight: bold;
+    color: #552b24;
+    margin-bottom: 15px;}
+
+h3 { font-size: 1.5em;
+    font-weight: normal;
+    color: #552b24;
+    font-style: italic;
+    margin-bottom: 12px;}
+
+/* ----------------------------
+   8. PARAGRAPH ALIGNMENT CLASSES
+   Used for alignment in homepage/about pages
+----------------------------- */
+
+.left-align { text-align: left;}
+
+.center-align { text-align: center;}
+
+.right-align { text-align: right;}
+
+/* ----------------------------
+   9. TEXT STYLES
+   Highlights, decorations, and emphasis
+----------------------------- */
+
+.highlight {color: #e67e22; font-weight: bold;}
+
+.decorated { text-decoration: underline; font-weight: bold; font-style: italic;}
+
+/* ----------------------------
+   10. LISTS
+   Styled unordered and ordered lists
+----------------------------- */
+ul {list-style-type: square; margin-left: 25px; margin-bottom: 20px;}
+
+ol {list-style-type: upper-roman; margin-left: 25px; margin-bottom: 20px;}
+
+/* ----------------------------
+   11. IMAGES
+   Scalable and centered
+----------------------------- */
+
+img { max-width: 100%; height: auto; display: block; margin: 20px auto;}
+
+/* ----------------------------
+   12. LINKS
+   Internal & external, hover-ready
+----------------------------- */
+
+a {color: #3498db; text-decoration: none;}
+
+a:hover { text-decoration: underline;}
+
+/* ----------------------------
+   13. EMAIL & PHONE LINKS
+   Contact section color highlights
+----------------------------- */
+
+.email-phone-links a {color: #2ecc71;}
+
+/* ----------------------------
+   14. FOOTER STYLING
+   Appears at bottom of every page
+----------------------------- */
+
+footer { background-color: #000000; padding: 20px; text-align: center;
+    font-size: 0.9em; margin-top: 40px; color: #ffffff;}
+
+/* ----------------------------
+   15. STANDARD TABLE STYLE
+   Used in resume and about pages
+----------------------------- */
+
+table { width: 90%; margin: 20px auto; border-collapse: collapse;}
+
+th, td { border: 1px solid #b83434; padding: 10px; text-align: center;}
+
+th { background-color: hsl(209, 100%, 79%); color: hsl(209, 96%, 36%); font-weight: bold;}
+
+td {background-color: #fefefe;}
+
+/* ----------------------------
+   16. SECTION BACKGROUND BLOCKS
+   Used on homepage for contrast
+----------------------------- */
+
+.section-background { background-color: rgb(233, 192, 138); padding: 20px; margin-top: 30px; border-radius: 8px;}
+
+/* ----------------------------
+   17. UNIQUE STYLES FOR WEB SKILLS PAGE
+   Adds visual contrast and modern layout
+----------------------------- */
+
+/* Highlighted boxed section */
+.highlight-section {background-color: #93e0d1; border-left: 6px solid #1abc9c; padding: 20px;
+    margin: 30px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);}
+
+/* Custom Styled List with Icon Bullets */
+.styled-list { list-style-type: none; margin: 0 0 20px 0; padding-left: 0;}
+
+.styled-list li {position: relative; padding-left: 30px;
+    margin-bottom: 12px; font-size: 1.05em;}
+
+.styled-list li::before {content: "✔️"; position: absolute; left: 0; top: 0; font-size: 1em; color: #1abc9c;}
+
+/* Visually distinct skills table for competency display */
+.skills-table {width: 90%;
+    margin: 30px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;}
+
+.skills-table th { background-color: #1abc9c;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1em;}
+
+.skills-table td { padding: 12px;
+    text-align: center;
+    background-color: #f8fdfc;
+    font-size: 1em;
+    border-top: 1px solid #ddd;}
+
+/* Character Refereneces Section */
+.character-list { list-style-type: none;
+    margin: 20px 0;
+    padding-left: 0;}
+
+.character-list li { font-family: 'Courier New', monospace;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #34495e;}
+
+/* Image Layout Styling */
+.image-container {text-align: center;
+    margin: 40px auto;}
+
+.image-container img { max-width: 60%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+
+/* ===================================================
+   A4 Enhancement: Newsletter Signup Form Styling
+   Description:
+   The styles below support the visual structure,
+   readability, and responsiveness of the HTML5 form.
+   =================================================== */
+
+/* Style the entire form container for spacing, background, and shadow */
+form {
+    max-width: 600px;                  /* Keeps the form nicely centred and narrow */
+    margin: 30px auto;                 /* Auto-centres form horizontally */
+    padding: 20px;                     /* Inner spacing for content breathing room */
+    background-color: #9edace;       /* Light, neutral background for clarity */
+    border: 1px solid #344a94;       /* Subtle border to distinguish the form */
+    border-radius: 12px;               /* Rounded edges for a modern aesthetic */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);  /* Soft shadow for depth */
+}
+
+/* Label styling for field identifiers */
+form label {
+    display: block;                    /* Ensures label appears on its own line */
+    margin: 12px 0 6px;                /* Spacing above and below label */
+    font-weight: bold;                 /* Improves readability and form hierarchy */
+    color: #2c3e50;                  /* Matches overall brand colour */
+}
+
+/* Input field styling: text, email, textarea */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;                          /* Makes inputs span full width of form */
+    padding: 10px;                        /* Comfortable inner spacing */
+    margin-bottom: 15px;                  /* Breathing room between fields */
+    border: 1px solid #ccc;             /* Subtle border for field shape */
+    border-radius: 6px;                   /* Light rounding for softer look */
+    font-size: 1em;                       /* Ensures text is readable */
+    background-color: #fff;            /* White background to contrast text */
+}
+
+/* Button styling: submit and reset */
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #1abc9c;               /* TerraMine theme green */
+    color: white;                            /* White text on coloured button */
+    border: none;                              /* Removes default border */
+    padding: 10px 20px;                        /* Roomy buttons for accessibility */
+    margin-top: 10px;                          /* Space above the buttons */
+    border-radius: 6px;                        /* Rounded corners for approachability */
+    font-size: 1em;                            /* Matches form text sizing */
+    cursor: pointer;                           /* Pointer cursor indicates actionability */
+    transition: background-color 0.3s ease;    /* Smooth hover effect */
+}
+
+/* Hover state for buttons */
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #148f77;         /* Darker shade on hover for feedback */
+}
+
+/* Paragraphs used before form groups (like radio or checkbox groups) */
+form p {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+/* Ensures spacing and alignment for radio buttons and checkboxes */
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 8px;                 /* Distance from label text */
+    margin-bottom: 8px;                /* Line spacing for stacked inputs */
+}
